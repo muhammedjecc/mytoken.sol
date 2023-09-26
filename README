@@ -1,0 +1,29 @@
+# MyToken Contract
+
+This is a Solidity contract for creating a token called "META"
+
+## Contract Details
+
+Token name is META
+Token abbrevation is MTA
+Total initial supply is 0
+
+## Mapping Variable
+A mapping is use to associate addresses their own token balances. shows the balances of token in the desired address
+
+## Functions
+mint function : allows to increase the total supply by the desired value to an address we input
+burn function: allows to deduct the token of desired value from the total supply
+
+using if statement for the prevention of burning the tokens that is more than the total supply
+
+## License
+
+This smart contract is licensed under the MIT License.
+
+plaintext
+SPDX-License-Identifier: MIT
+
+
+## Author
+ Muhammed T K
