@@ -10,13 +10,31 @@ Total initial supply is 0
 
 ## Mapping Variable
 A mapping is use to associate addresses their own token balances. shows the balances of token in the desired address
-
 ## Functions
-mint function : allows to increase the total supply by the desired value to an address we input
-burn function: allows to deduct the token of desired value from the total supply
 
-using if statement for the prevention of burning the tokens that is more than the total supply
+### `mint`
 
+solidity
+function mint(address _address, uint _value) public
+
+
+This function allows the contract owner (or anyone with the appropriate permissions) to mint new tokens and assign them to a specific address.
+
+- Parameters:
+  - `_address`: The address to which the newly minted tokens will be assigned.
+  - `_value`: The number of tokens to mint and assign.
+
+### `burn`
+
+solidity
+function burn(address _address, uint _value) public
+
+
+The `burn` function allows the contract owner (or anyone with the appropriate permissions) to burn a specific number of tokens held by a given address.
+
+- Parameters:
+  - `_address`: The address from which tokens will be burned.
+  - `_value`: The number of tokens to burn.
 ## License
 
 This smart contract is licensed under the MIT License.
